@@ -261,6 +261,8 @@
 \usepackage{xcolor}
 \usepackage{lscape}
 
+\renewcommand{\tablename}{TABLA}
+
 %\usepackage{stfloats}
 % stfloats.sty was written by Sigitas Tolusis. This package gives LaTeX2e
 % the ability to do double column floats at the bottom of the page as well
@@ -374,12 +376,11 @@
 % was not built to handle multiple paragraphs
 %
 
-\author{Maria~Guadalupe~Gramajo,~\IEEEmembership{Graduate Member,~IEEE,}
-    Mariel~Ale,
-        and~Luciana~Ballejos% <-this % stops a space
-\thanks{M. Gramajo, M. Ale and L. Ballejos estan con el Centro de Investigación y Desarrollo de Ingeniería en Sistemas de Información (CIDISI) CONICET-UTN, Santa Fe, S3000 Argentina   e-mail: \gramajoguadalupe@gmail.com }
+\author{Maria~Guadalupe~Gramajo,~\IEEEmembership{Graduate~Member,~IEEE,}
+    Luciana~Ballejos, and~Mariel~Ale% <-this % stops a space
+\thanks{M. Gramajo, L. Ballejos and M. Ale - Centro de Investigaci\'on y Desarrollo de Ingenier\'ia en Sistemas de Informaci\'on (CIDISI) - CONICET-UTN, Santa Fe, S3000 Argentina   e-mail: gramajoguadalupe@gmail.com }
 % <-this % stops a space
-\thanks{Manuscripto enviado Diciembre 11, 2019.}}
+\thanks{Manuscripto enviado Diciembre 20, 2019.}}
 
 % note the % following the last \IEEEmembership and also \thanks - 
 % these prevent an unwanted space from occurring between the last author name
@@ -402,7 +403,7 @@
 
 
 % The paper headers
-\markboth{IEEE Latin America Transaction, 396}%
+\markboth{IEEE Latin America Transaction, 54}%
 {Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for IEEE Journals}
 % The only time the second header will appear is for the odd numbered pages
 % after the title page when using the twoside option.
@@ -435,12 +436,12 @@
 % As a general rule, do not put math, special symbols or citations
 % in the abstract or keywords.
 \begin{abstract}
-Industries across the world have suffered the consequences that brings the globalization. These phenomenon impacts on the competitive capacity of industries, forcing them to integrate their production processes with other geographically distributed industries. Hence, Industries must reorganize and find suitable ways to share the common models that handle their information systems. The committee 184 subcommittee 4 of the International Standard Organization (ISO) put their effort to reach interoperability, publishing industrial product data standards, but most of these standards are not interoperable between each other. In this paper, we present a solution for this issue, an ontology network that reaches semantic interoperability for those standards.
+In recent years, the popularity of machine learning techniques has grown due to the availability of large volumes of data and the increased processing capacity of computers. Despite the inherent value of these techniques, few studies have attempted to summarize how machine learning algorithms, especially supervised learning have contributed to task automation and resolving challenges in Requirements Engineering. This paper proposes a systematic mapping of the literature to identify and analyze proposals detailing the uses and applications of supervised learning in Requirements Engineering between 2002-2018. The objective of this research is to identify trends, data sets and methods used. Thirty-three studies were selected based on defined inclusion and exclusion criteria. The results revealed that researches using these techniques focuses on eight broad categories: Detection of linguistic problems in requirements documents and artifacts written in natural language; Classification of document content ; Traceability; Effort estimation; Requirements analysis; Failure prediction; Quality and Detection of business rules. The most used supervised learning techniques were Support Vector Machine, Naive Bayes, Decision Tree, K-Nearest Neighbour and Random Forest. Twenty-five (25) public and twenty-eight (28) private data sources were identified. Among the most used public data sources are Predictor Models In Software Engineering (PROMISE), iTrust Electronic Health Care System and Metric Data Program (MDP) from NASA.
 \end{abstract}
 
 % Note that keywords are not normally used for peerreview papers.
 \begin{IEEEkeywords}
-Interoperability, Ontology, Industrial Data
+Machine Learning, Supervised Learning, Software Requirement, Requirements Engineering.
 \end{IEEEkeywords}
 
 
@@ -476,7 +477,7 @@ Interoperability, Ontology, Industrial Data
 % 
 % Here we have the typical use of a "T" for an initial drop letter
 % and "HIS" in caps to complete the first word.
-\IEEEPARstart{E}{n} LA actualidad el software resulta un activo esencial en todas las organizaciones. Las restricciones y expectativas de las partes interesadas hacen de su desarrollo un proceso poco trivial que consume tiempo y esfuerzo. Esta situación conduce a los ingenieros y gerentes de proyecto a centrar su trabajo en la resolución de los diversos desafíos que surgen durante el proceso de desarrollo de software \cite{Asghar2010}. La necesidad de abordar este escenario ha generado un creciente interés por la integración de nuevas tecnologías, especialmente por aquellas que emergen del área de la Inteligencia Artificial (IA). El surgimiento de nuevas estrategias de aprendizaje y el aumento de la capacidad de procesamiento en los ordenadores posicionaron a la IA como una herramienta poderosa y accesible, capaz de ser implementada como un componente clave durante el desarrollo de sistemas de software []. Estudios recientes han demostrado resultados prometedores al combinar técnicas tradicionales como el procesamiento de lenguaje natural, razonamiento basado en reglas y representación del conocimiento con técnicas de aprendizaje automático y aprendizaje profundo para brindar soluciones inteligentes a las tareas involucradas en el desarrollo de software []. 
+\IEEEPARstart{E}{n} LA actualidad el software resulta un activo esencial en todas las organizaciones. Las restricciones y expectativas de las partes interesadas hacen de su desarrollo un proceso poco trivial que consume tiempo y esfuerzo. Esta situación conduce a los ingenieros y gerentes de proyecto a centrar su trabajo en la resolución de los diversos desafíos que surgen durante el proceso de desarrollo de software \cite{Asghar2010}. La necesidad de abordar este escenario ha generado un creciente interés por la integración de nuevas tecnologías, especialmente por aquellas que emergen del área de la Inteligencia Artificial (IA). El surgimiento de nuevas estrategias de aprendizaje y el aumento de la capacidad de procesamiento en los ordenadores posicionaron a la IA como una herramienta poderosa y accesible, capaz de ser implementada como un componente clave durante el desarrollo de sistemas de software \cite{feldt2018ways}. Estudios recientes han demostrado resultados prometedores al combinar técnicas tradicionales como el procesamiento de lenguaje natural, razonamiento basado en reglas y representación del conocimiento con técnicas de aprendizaje automático y aprendizaje profundo para brindar soluciones inteligentes a las tareas involucradas en el desarrollo de software \cite{giudice2016ai}. 
 
 La integración de las tecnologías de IA en el área de la Ingeniería de Software, tiene por objetivo automatizar tareas que demandan esfuerzos intensivos, optimizar el proceso de desarrollo y consecuentemente, obtener sistemas de calidad. Diversas técnicas y algoritmos de IA, especialmente las técnicas de aprendizaje automático (AA) han impactado en las actividades involucradas en el ciclo de vida de desarrollo de software. En este sentido, la Ingeniería de Requerimientos (IR), subdisciplina esencial de la Ingeniería del Software dado que se enfoca en capturar y definir los requerimientos del sistema a desarrollar, se ha visto ampliamente beneficiada a partir de la implementación de dichas técnicas. 
 
@@ -503,7 +504,7 @@ Estas técnicas permiten a los ordenadores simular el aprendizaje humano por med
 
 De acuerdo al enfoque utilizado en el proceso de aprendizaje, los algoritmos de AA, puede clasificarse en cuatro grandes categorías, éstas incluyen: (a) \textit{aprendizaje supervisado}, (b) \textit{aprendizaje no supervisado}, (c) \textit{aprendizaje semi-supervisado} y (d) \textit{aprendizaje por refuerzo}. 
 
-En el aprendizaje supervisado, los algoritmos razonan desde instancias suministradas externamente y correctamente etiquetadas para producir hipótesis generales, las cuales permiten hacer predicciones sobre instancias futuras \cite{kotsiantis2007supervised}. En el aprendizaje no supervisado, los algoritmos disponen de datos con estructura desconocida y sin etiquetar. Su objetivo es la extracción de información mediante la exploración de la estructura de dichos datos. Los algoritmos de aprendizaje no supervisado se centran en la búsqueda de patrones ocultos y el análisis de agrupamiento a partir de conjuntos de datos \cite{celebi2016unsupervised}. El aprendizaje semi-supervisado permite utilizar datos no etiquetados para mejorar las tareas de aprendizaje supervisado cuando los datos etiquetados son escasos \cite{Knox2018}. En el aprendizaje por refuerzo los algoritmos aprenden basándose en la retroalimentación externa proporcionada por una entidad o entorno pensante \cite{sutton1998reinforcement}. La Fig. 1 presenta la clasificación de los algoritmos de AA mencionados anteriormente.
+En el aprendizaje supervisado, los algoritmos razonan desde instancias suministradas externamente y correctamente etiquetadas para producir hipótesis generales, las cuales permiten hacer predicciones sobre instancias futuras \cite{kotsiantis2007supervised}. En el aprendizaje no supervisado, los algoritmos disponen de datos con estructura desconocida y sin etiquetar. Su objetivo es la extracción de información mediante la exploración de la estructura de dichos datos. Los algoritmos de aprendizaje no supervisado se centran en la búsqueda de patrones ocultos y el análisis de agrupamiento a partir de conjuntos de datos \cite{celebi2016unsupervised}. El aprendizaje semi-supervisado permite utilizar datos no etiquetados para mejorar las tareas de aprendizaje supervisado cuando los datos etiquetados son escasos \cite{Knox2018}. En el aprendizaje por refuerzo los algoritmos aprenden basándose en la retroalimentación externa proporcionada por una entidad o entorno pensante \cite{sutton1998reinforcement}. La Fig. \ref{fig:1} presenta la clasificación de los algoritmos de AA mencionados anteriormente.
 
 Esta investigación establece como alcance el análisis de los estudios que emplean aprendizaje supervisado en el área de la IR; estas técnicas se caracterizan por su gran capacidad de predicción y clasificación. El aprendizaje supervisado, permite aprovechar las fuentes de datos disponibles para realizar predicciones de comportamiento, lo que permite desarrollar sistemas de apoyo y recomendación en diferentes dominios de aplicación, un área de interés fundamental para los autores.
 
@@ -511,7 +512,7 @@ Esta investigación establece como alcance el análisis de los estudios que empl
 \centering
 \includegraphics[width=3.5in]{figures/figure1_Guada.png}
 \caption{Clasificación de algoritmos de aprendizaje automático..}
-\label{fig1}
+\label{fig:1}
 \end{figure}
 
 \subsection{Aprendizaje Supervisado}
@@ -524,17 +525,17 @@ El conjunto de datos de entrenamiento incluye datos de entrada y valores de resp
 
 En esta subsección se describen los algoritmos de AA del tipo supervisado aplicados con mayor frecuencia en la IR. 
 
-El algoritmo de aprendizaje supervisado, \textit{Máquina de Soporte Vectorial} (SVM), puede ser utilizado para tareas de clasificación o regresión binaria. Las SVM proporcionan un enfoque alternativo a la categorización de entidades y han sido ampliamente utilizadas en aplicaciones relacionadas al procesamiento de lenguaje natural, reconocimiento de voz e imagen \cite{Asghar2010}.
+El algoritmo de aprendizaje supervisado, \textit{Máquina de Soporte Vectorial} (SVM), puede ser utilizado para tareas de clasificación o regresión binaria. Las SVM proporcionan un enfoque alternativo a la categorización de entidades y han sido ampliamente utilizadas en aplicaciones relacionadas al procesamiento de lenguaje natural, reconocimiento de voz e imagen.
 
-Una SVM mapea los puntos de entrada a un espacio de características de una dimensión mayor (i.e. si los puntos de entrada están en \(ℜ^2\) estos son mapeados por la SVM a \(ℜ^3\)). Este algoritmo clasifica los datos al encontrar el mejor hiperplano que separe los puntos de entrada y maximice el margen \( M \) entre las clases en el espacio de características.  Los vectores de soporte son los puntos de datos más cercanos al hiperplano de separación.
+Una SVM mapea los puntos de entrada a un espacio de características de una dimensión mayor (i.e. si los puntos de entrada están en \(ℜ^2\) estos son mapeados por la SVM a \(ℜ^3\)). Este algoritmo clasifica los datos al encontrar el mejor hiperplano que separe los puntos de entrada y maximice el margen \( M \) entre las clases en el espacio de características.  Los vectores de soporte son los puntos de datos más cercanos al hiperplano de separación \cite{shawe2000support}.
 
-\textit{Naive Bayes} (NB) es un algoritmo de aprendizaje automático basado en el Teorema de Bayes con una fuerte suposición de independencia condicional entre los predictores respecto de su clase o etiqueta. En otras palabras, un clasificador NB supone que la presencia de una característica particular en una clase no está relacionada con la presencia de otra característica []. Esta suposición de independencia condicional de los predictores permite al clasificador NB estimar los parámetros necesarios para una clasificación precisa mientras usa menos datos de entrenamiento respecto a otros clasificadores. Esto lo hace particularmente efectivo para conjuntos de datos que contienen muchos predictores. 
+\textit{Naive Bayes} (NB) es un algoritmo de aprendizaje automático basado en el Teorema de Bayes con una fuerte suposición de independencia condicional entre los predictores respecto de su clase o etiqueta. En otras palabras, un clasificador NB supone que la presencia de una característica particular en una clase no está relacionada con la presencia de otra característica \cite{manning2010introduction}. Esta suposición de independencia condicional de los predictores permite al clasificador NB estimar los parámetros necesarios para una clasificación precisa mientras usa menos datos de entrenamiento respecto a otros clasificadores. Esto lo hace particularmente efectivo para conjuntos de datos que contienen muchos predictores. 
 
-El algoritmo \textit{K-Nearest Neighbour} (KNN) se caracteriza por ser flexible y con una mecánica fácil de entender. Este algoritmo se basa en el aprendizaje por analogía, es decir, comparando un determinado individuo de prueba o punto de interés con ejemplos de entrenamiento que son similares a él. Los ejemplos de entrenamiento se describen mediante n atributos. Cada ejemplo o individuo representa un punto en un espacio n-dimensional. El valor de K representa la cantidad de puntos vecinos considerados para clasificar un individuo de prueba o  punto de interés. La proximidad de los K vecinos más cercanos se define en términos de una métrica de distancia como la distancia euclídea [].  
+El algoritmo \textit{K-Nearest Neighbour} (KNN) se caracteriza por ser flexible y con una mecánica fácil de entender. Este algoritmo se basa en el aprendizaje por analogía, es decir, comparando un determinado individuo de prueba o punto de interés con ejemplos de entrenamiento que son similares a él. Los ejemplos de entrenamiento se describen mediante n atributos. Cada ejemplo o individuo representa un punto en un espacio n-dimensional. El valor de K representa la cantidad de puntos vecinos considerados para clasificar un individuo de prueba o  punto de interés. La proximidad de los K vecinos más cercanos se define en términos de una métrica de distancia como la distancia euclídea \cite{alpaydin2014introduction}.  
 
-El algoritmo \textit{Decision Tree} (DT) es usado para resolver problemas de clasificación y regresión. Este algoritmo está basado en la lógica, donde los conjuntos de datos se modelan en estructuras jerárquicas en forma de árbol compuestas por decisiones lógicas. Cada nodo representa un atributo a evaluar, mientras que las ramas indican las opciones de decisión sobre el atributo dado y cada hoja representa un resultado. El resultado final será una estructura de árbol donde cada nodo interno representa un condicional para el valor de un atributo en particular y cada hoja representa la decisión para una clase en particular. En el caso de un nuevo individuo desconocido, el árbol procede a evaluar cada condicional hasta llegar al final de una de las hojas del árbol para etiquetar este nuevo caso. La complejidad del árbol se controla mediante la utilización de criterios de parada y métodos de  poda. Mientras que las métricas utilizadas para medir la complejidad del árbol son el número de nodos, el número de hojas, la profundidad de los árboles y el número de atributos utilizados []. 
+El algoritmo \textit{Decision Tree} (DT) es usado para resolver problemas de clasificación y regresión. Este algoritmo está basado en la lógica, donde los conjuntos de datos se modelan en estructuras jerárquicas en forma de árbol compuestas por decisiones lógicas. Cada nodo representa un atributo a evaluar, mientras que las ramas indican las opciones de decisión sobre el atributo dado y cada hoja representa un resultado. El resultado final será una estructura de árbol donde cada nodo interno representa un condicional para el valor de un atributo en particular y cada hoja representa la decisión para una clase en particular. En el caso de un nuevo individuo desconocido, el árbol procede a evaluar cada condicional hasta llegar al final de una de las hojas del árbol para etiquetar este nuevo caso. La complejidad del árbol se controla mediante la utilización de criterios de parada y métodos de  poda. Mientras que las métricas utilizadas para medir la complejidad del árbol son el número de nodos, el número de hojas, la profundidad de los árboles y el número de atributos utilizados \cite{rokach2005decision}. 
 
-El algoritmo \textit{Random Forest} combina un conjunto de árboles de decisión y entrena a cada uno con un conjunto de observaciones tomadas al azar. Las predicciones finales del algoritmo se generan promediando las predicciones individuales de cada árbol.  Random Forest es un método de aprendizaje utilizado para problemas de clasificación y regresión []. 
+El algoritmo \textit{Random Forest} combina un conjunto de árboles de decisión y entrena a cada uno con un conjunto de observaciones tomadas al azar. Las predicciones finales del algoritmo se generan promediando las predicciones individuales de cada árbol.  Random Forest es un método de aprendizaje utilizado para problemas de clasificación y regresión \cite{williams2011random}. 
 
 \subsection{Ingeniería de Requerimientos}
 
@@ -542,13 +543,13 @@ La IR provee el mecanismo apropiado para entender lo que desea el cliente, anali
 
 Sin embargo, dada las exigencias de comunicación y colaboración entre las partes interesadas, la IR está sujeta a diversos desafíos. Especialmente, durante las actividades de educción y especificación de requerimientos, en las cuales es posible incurrir en la inserción de errores y malentendidos. Es por ello, que a menudo esta fase debe afrontar diversas dificultades, tales como especificaciones de requerimientos incompletas y ambiguas, intereses en conflicto de las partes interesadas, volatilidad en los requerimientos y restricciones de tiempo, entre otros, que influyen en la calidad y el éxito del proyecto de software. Cuando estas dificultades no son resueltas, se generan fallas, esfuerzo adicional para el equipo de desarrollo y consecuentemente, incrementan los costos del proyecto de software. 
 
-Considerando estos retos y el surgimiento de nuevas técnicas de aprendizaje de IA, cuyo valor ha sido ampliamente reconocido en diversos dominios de aplicación, la comunidad científica ha comenzado a experimentar sobre la aplicación de diversos métodos y algoritmos de AA en las actividades de la IR, a fin de resolver dificultades y aspectos aún no resueltos. En los últimos años, investigadores y profesionales han explorado la utilidad del AA en aplicaciones de software para enriquecer técnicas y procedimientos tradicionales que conduzcan a contribuciones significativas en la IR. Por lo tanto, los aportes y mejoras que se puedan realizar en el área favorecerá a todo el ciclo de vida del software. Por esta razón, en esta investigación se propone brindar una visión general de la literatura acerca de cómo los investigadores han aprovechado los algoritmos de AA para automatizar y optimizar las diversas actividades involucradas en dicha área.
+Considerando estos retos y el surgimiento de nuevas técnicas de aprendizaje de IA, cuyo valor ha sido ampliamente reconocido en diversos dominios de aplicación, la comunidad científica ha comenzado a experimentar sobre la aplicación de diversos métodos de AA en las actividades de la IR, a fin de resolver dificultades y aspectos aún no resueltos. En los últimos años, investigadores y profesionales han explorado la utilidad del AA en aplicaciones de software para enriquecer técnicas y procedimientos tradicionales que conduzcan a contribuciones significativas en la IR. Por lo tanto, los aportes y mejoras que se puedan realizar en el área favorecerá a todo el ciclo de vida del software. Por esta razón, en esta investigación se propone brindar una visión general de la literatura acerca de cómo los investigadores han aprovechado los algoritmos de AA para automatizar y optimizar las diversas actividades involucradas en dicha área.
 
 
 
 \section{Metodología}
 
-El método utilizado para desarrollar este mapeo sistemático de la literatura se basa en los lineamientos establecidos en las contribuciones de Petersen y otros \cite{petersen2008systematic}, una propuesta ampliamente aceptada por la comunidad científica para realizar estudios de mapeo en el área de la Ingeniería de Software. El proceso de investigación consta de cinco etapas principales: (a) definición de las preguntas de investigación, (b) búsqueda e identificación de estudios primarios mediante cadenas de búsqueda en bibliotecas académicas digitales, (c) selección de los estudios mediante criterios de inclusión y exclusión, (d) revisión de estudios seleccionados a través de la lectura comprensiva de resúmenes, búsqueda de palabras clave y conceptos que reflejen el contexto de investigación, y, por último, e) extracción y análisis de datos. La Fig. 2 sintetiza el método aplicado en esta investigación.
+El método utilizado para desarrollar este mapeo sistemático de la literatura se basa en los lineamientos establecidos en las contribuciones de Petersen y otros \cite{petersen2008systematic}, una propuesta ampliamente aceptada por la comunidad científica para realizar estudios de mapeo en el área de la Ingeniería de Software. El proceso de investigación consta de cinco etapas principales: (a) definición de las preguntas de investigación, (b) búsqueda e identificación de estudios primarios mediante cadenas de búsqueda en bibliotecas académicas digitales, (c) selección de los estudios mediante criterios de inclusión y exclusión, (d) revisión de estudios seleccionados a través de la lectura comprensiva de resúmenes, búsqueda de palabras clave y conceptos que reflejen el contexto de investigación, y, por último, e) extracción y análisis de datos. La Fig. \ref{fig:2} sintetiza el método aplicado en esta investigación.
 
 Las subsecciones posteriores, describen los elementos de entrada y salidas obtenidos, como resultado de la metodología aplicada.
 
@@ -584,7 +585,7 @@ Q3. ¿Cuáles son las principales fuentes de datos utilizadas para ejecutar los 
 
 Los estudios se identificaron consultando cuatro bibliotecas en línea: (i) IEEEXplore; (ii) ScienceDirect; (iii) SpringerLink y (iv) Scopus. Estas bibliotecas fueron seleccionadas porque son consideradas fuentes importantes de estudios en el área Informática en general, y de Ingeniería de Software en particular, poseen repositorios de conferencias y revistas relevantes. Asimismo, sus motores de búsqueda admiten la posibilidad de realizar búsquedas avanzadas basadas en diferentes criterios y formatos de cadena.
 
-Los términos utilizados para construir la consulta de búsqueda fueron acordados entre los autores, teniendo en cuenta las directrices propuestas por Petersen y otros \cite{petersen2008systematic}. Estos se mencionan a continuación: (1) Identificar los términos principales en las preguntas de investigación; (2) Extraer palabras clave de documentos relevantes a la temática; (3) Identificación de términos de búsqueda en títulos, resúmenes y palabras clave relevantes; (4) Identificar sinónimos y abreviaturas alternativas; (5) Construir cadenas de búsqueda, concatenando las palabras identificadas mediante operadores booleanos "AND" para enlazar los términos principales y "OR" para incorporar sinónimos alternativos. La cadena de búsqueda genérica resultante se muestra en la Fig. 3.
+Los términos utilizados para construir la consulta de búsqueda fueron acordados entre los autores, teniendo en cuenta las directrices propuestas por Petersen y otros \cite{petersen2008systematic}. Estos se mencionan a continuación: (1) Identificar los términos principales en las preguntas de investigación; (2) Extraer palabras clave de documentos relevantes a la temática; (3) Identificación de términos de búsqueda en títulos, resúmenes y palabras clave relevantes; (4) Identificar sinónimos y abreviaturas alternativas; (5) Construir cadenas de búsqueda, concatenando las palabras identificadas mediante operadores booleanos "AND" para enlazar los términos principales y "OR" para incorporar sinónimos alternativos. La cadena de búsqueda genérica resultante se muestra en la Fig. \ref{fig:3}.
 
 La misma fue adaptada a la sintaxis de los motores de búsqueda de cada repositorio. Si bien, este trabajo aborda el análisis de las investigaciones que aplican aprendizaje supervisado, en las simulaciones de búsqueda realizadas se observó la presencia de estudios vinculados a la temática que utilizaron como palabra clave el término aprendizaje automático sin especificar el tipo de enfoque de aprendizaje aplicado (supervisado, no supervisado, semi-supervisado, por refuerzo).
 
@@ -592,7 +593,7 @@ La misma fue adaptada a la sintaxis de los motores de búsqueda de cada reposito
 \centering
 \includegraphics[width=3.5in]{figures/figure2_Guada.png}
 \caption{Metodología de investigación \cite{petersen2008systematic}.}
-\label{fig2}
+\label{fig:2}
 \end{figure}
 
 
@@ -600,7 +601,7 @@ La misma fue adaptada a la sintaxis de los motores de búsqueda de cada reposito
 \centering
 \includegraphics[width=3.5in]{figures/figure3_Guada.png}
 \caption{Cadena de búsqueda genérica.}
-\label{fig3}
+\label{fig:3}
 \end{figure}
 
 Es por ello, que se añadió este término a la cadena de búsqueda.
@@ -609,7 +610,6 @@ Con la intención de impulsar a los investigadores a trabajar en propuestas inno
 incluye los algoritmos y modelos más populares, tales como máquina de soporte vectorial (SVM), modelos gaussianos mixtos, clasificadores bayesianos, K-vecinos más cercanos (KNN), redes neuronales artificiales (ANN), entre otros \cite{collobert2002torch}.
 
 La difusión de este hecho y el creciente interés en indagar más aún sobre la utilidad de las técnicas de AA impulsó su aplicación en diversos dominios. Consecuentemente, por esta razón, la búsqueda de estudios en este trabajo se acotó al período que parte desde el citado hito hasta el año 2018, planteando como desafío descubrir oportunidades de investigación y lagunas en el campo del aprendizaje supervisado aplicado a la IR.
-
 \subsection{Criterios de Inclusión y Exclusión}
 
 Esta investigación se centra en el análisis de propuestas cuyo foco de investigación es la aplicación de técnicas de aprendizaje automático supervisado en la IR. Fueron incluidas publicaciones redactadas en idioma inglés, debido al bajo nivel de difusión de publicaciones y artículos redactados en otros idiomas en revistas relevantes de Ingeniería de Software. 
@@ -638,15 +638,15 @@ CI4. Estudios publicados en idioma inglés. & CE4. Trabajos de investigación no
 \begin{figure}[!t]
 \centering
 \includegraphics[width=3.5in]{figures/figure4_Guada.png}
-\caption{Número de estudios identificados por repositorio académico.}
-\label{fig4}
+\caption{Número de estudios identificados por repositorio acad\'emico.}
+\label{fig:4}
 \end{figure}
 
-Fueron excluidos los estudios no revisados por pares, duplicados, no redactados en inglés, documentos redundantes de la misma autoría, documentos del tipo tesis, position papers, panel de discusiones y, aquellos que no incluían técnicas de aprendizaje automático supervisado para apoyar las actividades de IR. La Tabla II resume los criterios de inclusión y exclusión considerados para seleccionar los estudios candidatos al análisis.
+Fueron excluidos los estudios no revisados por pares, duplicados, no redactados en inglés, documentos redundantes de la misma autoría, documentos del tipo tesis, position papers, panel de discusiones y, aquellos que no incluían técnicas de aprendizaje automático supervisado para apoyar las actividades de IR. La Tabla \ref{tabla2} resume los criterios de inclusión y exclusión considerados para seleccionar los estudios candidatos al análisis.
 
 \subsection{Extracción de Datos}
 
-La cadena de búsqueda se aplicó en los repositorios seleccionados, sobre títulos, resúmenes y palabras clave. Fueron identificados doscientos sesenta y nueve (269) documentos como resultado de la ejecución. La biblioteca IEEEXplore devolvió veintiséis (26) artículos; Scopus sesenta y dos (62); ScienceDirect identificó sólo cinco (5) documentos; y finalmente, SpringerLink fue la biblioteca que retornó una mayor cantidad, identificando ciento setenta y seis (176) artículos. La Fig. 4 sintetiza la cantidad de estudios recuperados por repositorio académico y los artículos seleccionados.
+La cadena de búsqueda se aplicó en los repositorios seleccionados, sobre títulos, resúmenes y palabras clave. Fueron identificados doscientos sesenta y nueve (269) documentos como resultado de la ejecución. La biblioteca IEEEXplore devolvió veintiséis (26) artículos; Scopus sesenta y dos (62); ScienceDirect identificó sólo cinco (5) documentos; y finalmente, SpringerLink fue la biblioteca que retornó una mayor cantidad, identificando ciento setenta y seis (176) artículos. La Fig. \ref{fig:4} sintetiza la cantidad de estudios recuperados por repositorio académico y los artículos seleccionados.
 
 Los artículos recuperados de los repositorios académicos fueron organizados en un formulario de extracción de datos, por título, año de publicación y revista o conferencia. Cada uno de estos artículos fueron analizados en busca de aquellos que cumplían los criterios de inclusión, mientras que los que no cumplían con éstos fueron excluidos. 
 
@@ -654,22 +654,45 @@ Como resultado del proceso de filtrado, fueron seleccionados treinta y uno (31) 
 
 \subsection{Síntesis de Datos }
 
-Esta investigación analiza treinta y tres (33) estudios como resultado del proceso de selección. A continuación, se detallan los resultados obtenidos y luego, se responden las preguntas de investigación.
-La distribución de los estudios publicados en función del tiempo permite visualizar las tendencias respecto al empleo de técnicas de aprendizaje supervisado en el área de la IR. La Fig. 5 muestra la distribución de los artículos seleccionados por año de publicación.
+Esta investigación analiza treinta y tres (33) estudios, resultantes del proceso de selección. A continuación, se detallan los resultados obtenidos y luego, se responden las preguntas de investigación.
 
-La Fig. 5 muestra un aumento significativo del 67\% respecto a propuestas de investigación que utilizan métodos de aprendizaje supervisado para dar soporte a las diversas tareas de la IR durante el período (2016-2018). En consecuencia, es notable el posicionamiento de las tecnologías de AA como tema de interés en los últimos dos años. Probablemente, esto se deba a los importantes avances respecto al incremento de la capacidad de procesamiento en los ordenadores y el surgimiento de nuevas técnicas que otorgan mayor poder de aprendizaje. Otro aspecto relevante, es el reconocimiento de la comunidad científica respecto al valor del AA para automatizar tareas y resolver dificultades en diversos dominios, lo que sin dudas ha motivado a los profesionales de la IR a investigar sobre su uso en dicha área. Con la finalidad de ampliar las capacidades y recursos de los desarrolladores para brindar soluciones inteligentes a los desafíos presentes en la IR. 
+La distribución de los estudios publicados en función del tiempo permite visualizar las tendencias respecto al empleo de técnicas de aprendizaje supervisado en el área de la IR. La Fig. \ref{fig:5} muestra la distribución de los artículos seleccionados por año de publicación.
 
-Como se mencionó anteriormente, un mapeo sistemático tiene como objetivo identificar las revistas y conferencias científicas utilizadas frecuentemente por los investigadores para difundir sus trabajos de investigación. Es por ello, que en la Fig. 6 se identifican las conferencias más populares y su frecuencia de publicación, a fin de reconocer los potenciales espacios para presentar futuras propuestas. 
+\begin{figure}[!t]
+\centering
+\includegraphics[width=3.5in]{figures/Figure5_Guada.png}
+\caption{Distribuci\'on de estudios seleccionados por año de publicaci\'on.}
+\label{fig:5}
+\end{figure}
+
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=3.5in]{figures/Figure6_Guada.png}
+\caption{Distribuci\'on de estudios publicados en conferencias cient\'ificas.}
+\label{fig:6}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=3.5in]{figures/Figure7_Guada.png}
+\caption{Distribuci\'on de estudios seleccionados por año de publicaci\'on.}
+\label{fig:7}
+\end{figure}
+
+La Fig. \ref{fig:5} muestra un aumento significativo del 67\% respecto a propuestas de investigación que utilizan métodos de aprendizaje supervisado para dar soporte a las diversas tareas de la IR durante el período (2016-2018). En consecuencia, es notable el posicionamiento de las tecnologías de AA como tema de interés en los últimos dos años. Probablemente, esto se deba a los importantes avances respecto al incremento de la capacidad de procesamiento en los ordenadores y el surgimiento de nuevas técnicas que otorgan mayor poder de aprendizaje. Otro aspecto relevante, es el reconocimiento de la comunidad científica respecto al valor del AA para automatizar tareas y resolver dificultades en diversos dominios, lo que sin dudas ha motivado a los profesionales de la IR a investigar sobre su uso en dicha área. Con la finalidad de ampliar las capacidades y recursos de los desarrolladores para brindar soluciones inteligentes a los desafíos presentes en la IR. 
+
+Como se mencionó anteriormente, un mapeo sistemático tiene como objetivo identificar las revistas y conferencias científicas utilizadas frecuentemente por los investigadores para difundir sus trabajos de investigación. Es por ello, que en la Fig. \ref{fig:6} se identifican las conferencias más populares y su frecuencia de publicación, a fin de reconocer los potenciales espacios para presentar futuras propuestas. 
 
 En esta investigación se identificaron veinticuatro (24) estudios publicados en conferencias internacionales. La conferencia que presenta mayor frecuencia de publicación, ocho (8) estudios, es la “International Requirements Engineering Conference”. Esta conferencia está clasificada con la categoría A en el ranking de Excelencia en Investigación en Australia (ERA) y con la categoría A1 en el ranking de Qualis del Ministerio de Educación de Brasil. Probablemente su elevada categoría, sea una de las razones que justifican la frecuencia de publicación en dicha conferencia. 
 
-En cuanto a publicaciones en revistas científicas fueron identificados nueve (9) artículos. La Fig.7 señala las revistas más populares y su frecuencia de publicación. De acuerdo a los resultados obtenidos, se observa que la revista “Information and Software Technology” posee tres (3) artículos publicados, mientras que "Requirements Engineering" posee dos (2) artículos publicados en los últimos quince años. Ambas revistas forman parte del cuartil (Q2), escala que ofrece scimagojr, para clasificar revistas relevantes. 
+En cuanto a publicaciones en revistas científicas fueron identificados nueve (9) artículos. La Fig. \ref{fig:7} señala las revistas más populares y su frecuencia de publicación. De acuerdo a los resultados obtenidos, se observa que la revista “Information and Software Technology” posee tres (3) artículos publicados, mientras que "Requirements Engineering" posee dos (2) artículos publicados en los últimos quince años. Ambas revistas forman parte del cuartil (Q2), escala que ofrece scimagojr\footnote{https://www.scimagojr.com/}, para clasificar revistas relevantes. 
 
 A continuación, se responden las preguntas de investigación definidas.
 
-\emph{Q1. ¿Cuáles son las actividades de la IR respaldadas por las técnicas de aprendizaje supervisado?}
+\emph{\textbf{Q1. ¿Cuáles son las actividades de la IR respaldadas por las técnicas de aprendizaje supervisado?}}
 
-Los artículos identificados demuestran que el aprendizaje supervisado, es utilizado en la actualidad por ingenieros e investigadores para obtener nuevas perspectivas y soluciones a problemas que estaban anteriormente fuera de su alcance, aprovechando la infraestructura de hardware y una mayor disponibilidad de los datos. El Anexo A presenta un resumen de los estudios seleccionados.
+Los artículos identificados demuestran que el aprendizaje supervisado, es utilizado en la actualidad por ingenieros e investigadores para obtener nuevas perspectivas y soluciones a problemas que anteriormente se encontraban fuera de su alcance, aprovechando la infraestructura de hardware y una mayor disponibilidad de los datos. El Anexo A presenta un resumen de los estudios seleccionados.
 
 En esta investigación se identificaron métodos y propuestas que apoyan las tareas de obtención y especificación de requerimientos. La obtención de requerimientos es la tarea que determina, a través de la comunicación con los clientes y usuarios, las necesidades y restricciones del producto software a desarrollar.
  
@@ -677,9 +700,10 @@ Los requerimientos se obtienen a través de entrevistas, inspecciones, cuestiona
 
 En esta revisión, se identificaron cinco (5) propuestas que abordan los desafíos relacionados con la detección de incertidumbre \cite{yang2012speculative}, \cite{Knauss201685} y ambigüedad \cite{yang2010extending}, \cite{Yang2011}, \cite{Ott2013} en documentos de requerimientos y artefactos escritos en lenguaje natural. Estas propuestas tienen por objeto ayudar a los analistas e ingenieros a identificar los requerimientos propensos a generar malentendidos entre las partes interesadas.
 
+
 Por otro lado, determinar la coherencia respecto a un documento de requerimientos también es una tarea abordada mediante las técnicas de aprendizaje supervisado \cite{nikora2009automated}. Sólo se identificó un (1) estudio en el área. Esta propuesta utiliza técnicas de procesamiento de lenguaje natural y aprendizaje supervisado para identificar tipos específicos de requerimientos dentro de un conjunto de especificaciones y generar subconjuntos. Esto facilita el análisis de cada subconjunto respecto a aspectos tales como consistencia, integridad y ambigüedad en relación a otros requerimientos. La agrupación de requerimientos en muestras de menor tamaño minimiza la probabilidad de errores durante su análisis.
 
-Otras investigaciones abordan la clasificación automática de los requerimientos escritos en lenguaje natural en requerimientos funcionales (RF) y las diversas subcategorías de los requerimientos no funcionales (RNF). Esto se debe particularmente, al hecho que los stakeholders, al igual que los ingenieros de requerimientos, usan diversas terminologías y estructuras de oraciones para describir el mismo tipo de requerimiento. Dados estos problemas, es imperativo desarrollar nuevas técnicas y herramientas que puedan respaldar la clasificación de requerimientos. En este trabajo se identificaron ocho (8) propuestas que apuestan a resolver este desafío mediante la aplicación de técnicas de aprendizaje supervisado \cite{li2017identifying,Jindal20162027,kurtanovic2017automatically,dekhtyar2017re,abad2017works,Slankas2013,Slankas2013a}.
+Otras investigaciones abordan la clasificación automática de los requerimientos escritos en lenguaje natural en requerimientos funcionales (RF) y las diversas subcategorías de los requerimientos no funcionales (RNF). Esto se debe particularmente, al hecho de que los stakeholders, al igual que los ingenieros de requerimientos, usan diversas terminologías y estructuras de oraciones para describir el mismo tipo de requerimiento. Dados estos problemas, es imperativo desarrollar nuevas técnicas y herramientas que puedan respaldar la clasificación de requerimientos. En este trabajo se identificaron ocho (8) propuestas que apuestan a resolver este desafío mediante la aplicación de técnicas de aprendizaje supervisado \cite{li2017identifying,Jindal20162027,kurtanovic2017automatically,dekhtyar2017re,abad2017works,Slankas2013,Slankas2013a}.
 
 Merten y otros \cite{Merten2016} en su propuesta aplican técnicas de aprendizaje supervisado y procesamiento de textos para detectar y clasificar solicitudes de funcionalidades de software presentes en los sistemas de seguimiento y soporte a problemas.
 
@@ -687,113 +711,151 @@ Los documentos de requerimientos, además de contener especificaciones, poseen c
 
 Otras investigaciones tienen como foco de estudio los enlaces de trazabilidad, fundamentales para el mantenimiento del producto software porque establecen vínculos entre los artefactos de software relacionados, por ejemplo, código fuente, documentación, especificaciones de requerimientos, entre otros, dentro de un sistema. Esto implica que un requerimiento sea trazable desde su definición y durante todo el desarrollo del software, lo cual garantiza una adecuada gestión de cambios y evaluación de impacto en el resto del sistema. La identificación y clasificación de la trazabilidad entre los requerimientos es abordada en seis (6) propuestas \cite{Li201725}, \cite{Cleland-Huang2010,gokyer2008non,Mills2017,Sardinha2013,AtasM.2018}.
 
-La identificación de reglas de negocio es una tarea importante del proceso de la IR. Sin embargo, resulta desafiante ya que estas reglas a menudo, no se establecen explícitamente en los documentos de requerimientos. En caso de que las reglas de negocio sean explícitas, pueden no ser de naturaleza atómica, o pueden ser vagas. Los hallazgos en esta investigación demuestran que el aprendizaje supervisado ha sido empleado para detectar reglas de negocio sobre las especificaciones de requerimientos \cite{sharma2014automated}. Se identificó sólo un (1) estudio que proporciona una posible solución a dicho desafío.
+La identificación de reglas de negocio es una tarea importante del proceso de la IR. Sin embargo, resulta desafiante ya que estas reglas a menudo, no se establecen explícitamente en los documentos de requerimientos. En caso de que las reglas de negocio sean explícitas, pueden no ser de naturaleza atómica, o pueden ser vagas. Los hallazgos en esta investigación demuestran que el aprendizaje supervisado ha sido empleado para detectar reglas de negocio sobre las especificaciones de requerimientos\cite{sharma2014automated}. Se identificó sólo un (1) estudio que propone una solución a dicho desafío.
 
-Uno de los factores más importantes en el desarrollo de un proyecto de software, es la calidad de sus requerimientos. Los requerimientos erróneos no detectados en fases tempranas pueden provocar costos adicionales, insatisfacción de las partes interesadas y retrasos en la entrega del producto software, consecuentemente, esto podría generar la cancelación del proyecto. Por estas razones, la investigación sobre dicha temática resulta clave. En este trabajo se identificaron tres (3) estudios que abordan la clasificación y evaluación de la calidad de requerimientos \cite{Parra2015180,Hayes2015,Hussain2007}. 
+Uno de los factores más importantes y desafiantes en el desarrollo de un proyecto de software, es la obtención de requerimientos de calidad. Los requerimientos erróneos no detectados en fases tempranas pueden provocar costos adicionales, insatisfacción de las partes interesadas y retrasos en la entrega del producto software, consecuentemente, esto podría generar la cancelación del proyecto. Por estas razones, la investigación sobre dicha temática resulta clave. En este trabajo se identificaron tres (3) estudios que abordan la clasificación y evaluación de la calidad de requerimientos \cite{Parra2015180,Hayes2015,Hussain2007}. 
 
 Algunas investigaciones utilizan el aprendizaje supervisado para hacer predicciones respecto a la necesidad de revisión en los documentos de requerimientos \cite{del2017stability} con el objetivo de ayudar a los analistas e ingenieros a determinar si una especificación de requerimientos es lo suficientemente estable o necesita revisión adicional. Además, estas técnicas también son utilizadas para predecir el rendimiento operativo del sistema mediante el análisis de la calidad de los requerimientos \cite{dargan2016systems}. Otros aplican el aprendizaje supervisado para predecir fallas en las funcionalidades solicitadas por los stakeholders en los sistemas de gestión de solicitudes de funciones en línea \cite{fitzgerald2012early}, predicción de clases en el código propensas al cambio \cite{malhotra2017exploratory}, predicción de riesgos en los requerimientos, con la intención de obtener predictores que indiquen la necesidad de utilizar técnicas para la gestión de riesgos y así mitigar su impacto \cite{del2011requirement}. Se identificaron cinco (5) propuestas que resuelven desafíos de la IR mediante la generación de modelos predictivos. 
 
 Por otro lado, se detectó un enfoque que emplea el aprendizaje supervisado para cuantificar el impacto de los RNF en la estimación del esfuerzo de desarrollo de un proyecto de software \cite{Abdukalykov2011158}. También, se identificó una propuesta que aborda el análisis de requerimientos para extraer automáticamente información semántica \cite{Wang2016}. 
 
-A partir del análisis de los estudios seleccionados, es notable el amplio abanico de aplicaciones de modelos de aprendizaje supervisado en el campo de la IR. Especialmente se destacan las propuestas destinadas a resolver problemas lingüísticos presentes en los documentos de requerimientos y artefactos escritos en lenguaje natural; y también se distinguen las investigaciones enfocadas en la clasificación del contenido de los documentos de requerimientos.
+A partir del análisis de los estudios seleccionados, es notable el amplio abanico de aplicaciones de modelos de aprendizaje supervisado en el campo de la IR. Especialmente, se destacan las propuestas destinadas a resolver problemas lingüísticos presentes en los documentos de requerimientos y artefactos escritos en lenguaje natural. Por otro lado, también se distinguen las investigaciones enfocadas en la clasificación del contenido de los documentos de requerimientos.
 
 
 \begin{table}[!t]
 \renewcommand{\arraystretch}{1.3}
-\caption{ARTÍCULOS POR CATEGORÍA}
+\caption{ARTÍCULOS POR CATEGORÍA Y ACTIVIDADES DE LA IR}
 \label{tabla3}
 \centering
-\begin{tabular}{p{3cm}p{4.5cm}}
+\begin{tabular}{p{2.8cm}p{1.7cm}p{3cm}}
 \hline
 \hline
-Categoría & ID Articulo \\
+Categoría & ID Articulo & Actividades de la IR \\
 \hline
-Análisis de Requerimientos & \cite{Wang2016} \\ \cline{1-2}
-Reglas de Negocio & \cite{sharma2014automated} \\ \cline{1-2}
-Clasificación de Contenido & \cite{li2017identifying,Jindal20162027,kurtanovic2017automatically,dekhtyar2017re,abad2017works,Slankas2013,Slankas2013a,Merten2016,winkler2016automatic} \\ \cline{1-2}
-Predicción de Fallas & \cite{del2017stability,dargan2016systems,fitzgerald2012early,malhotra2017exploratory,del2011requirement} \\ \cline{1-2}
-Estimación de Esfuerzo & \cite{Abdukalykov2011158} \\ \cline{1-2}
+Análisis de Requerimientos & \cite{Wang2016} & Análisis de Requerimientos \\ \cline{1-3}
+Reglas de Negocio & \cite{sharma2014automated} & Especificación de Requerimientos \\ \cline{1-3}
+Clasificación de Contenido & \cite{li2017identifying,Jindal20162027,kurtanovic2017automatically,dekhtyar2017re,abad2017works,Slankas2013,Slankas2013a,Merten2016,winkler2016automatic} & Análisis de Requerimientos \\ \cline{1-3}
+Predicción de Fallas & \cite{del2017stability,dargan2016systems,fitzgerald2012early,malhotra2017exploratory,del2011requirement} & Validación y Verificación \\ \cline{1-3}
+Estimación de Esfuerzo & \cite{Abdukalykov2011158} & Validación y Verificación\\ \cline{1-3}
 Problemas lingüísticos en documentos de requerimientos y
-artefactos escritos en lenguaje natural (PDNL) & \cite{yang2010extending,yang2012speculative,Knauss201685,Yang2011,Ott2013,nikora2009automated} \\ \cline{1-2}
-Trazabilidad & \cite{Li201725,Cleland-Huang2010,gokyer2008non,Mills2017,Sardinha2013,AtasM.2018} \\ \cline{1-2}
-Calidad & \cite{Parra2015180,Hayes2015,Hussain2007} \\
+artefactos escritos en lenguaje natural (PDNL) &\cite{yang2010extending,yang2012speculative,Knauss201685,Yang2011,Ott2013,nikora2009automated} & Validación y Verificación \\ \cline{1-3}
+Trazabilidad &\cite{Li201725,Cleland-Huang2010,gokyer2008non,Mills2017,Sardinha2013,AtasM.2018} & Especificación de Requerimientos  \\ \cline{1-3}
+Calidad & \cite{Parra2015180,Hayes2015,Hussain2007} & Especificación de Requerimientos \\
 \hline \hline                                                                                                    
 \end{tabular}
 \end{table}
 
+\begin{figure}[!t]
+\centering
+\includegraphics[width=3.2in]{figures/Figure8_Guada.png}
+\caption{Distribución de artículos por año y categoría.}
+\label{fig:8}
+\end{figure}
 
 
+\begin{figure}[!t]
+\centering
+\includegraphics[width=3.5in]{figures/figure9_Guada.png}
+\caption{Relación entre algoritmos de AA y actividades de la IR.}
+\label{fig:9}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=3.5in]{figures/Figure11_Guada2.png}
+\caption{Relación entre algoritmo de AA y categoría.}
+\label{fig:10}
+\end{figure}
 
 
+La revisión comprensiva de los estudios seleccionados demuestra que las técnicas de aprendizaje supervisado en la IR se centran en ocho grandes categorías: (a) Análisis de requerimientos; (b) Identificación de reglas de negocio; (c) Detección de fallas; (d) Estimación del esfuerzo; (e) Resolución de problemas lingüísticos en documentos de requerimientos y artefactos escritos en lenguaje natural (PDNL); (f) Trazabilidad; y (g) Calidad. La Tabla \ref{tabla3} mapea los artículos identificados con las actividades de la IR y su correspondiente categoría asociada. 
+
+En la Tabla \ref{tabla3}, se puede observar que las categorías clasificación de contenido, PDNL y trazabilidad, poseen una mayor cantidad de propuestas que aplican métodos de AA. Consecuentemente, es posible determinar que las actividades de la IR de mayor interés y experiencia respecto a la utilización de dichas técnicas corresponden al análisis de requerimientos, validación y verificación. 
+
+La Fig. \ref{fig:8} muestra la distribución de artículos que emplean el aprendizaje supervisado en función a las categorías definidas.
+
+En la Fig. \ref{fig:8} es posible apreciar que a pesar de la liberación en el año 2002 de librerías y nuevas tecnologías que permitieron explorar el uso de las técnicas de AA en diversos dominios, recién a partir del año 2006 comenzaron a ser aplicadas en el área de la IR. Las propuestas iniciales, estuvieron orientadas a la resolución de desafíos relacionados a la calidad y trazabilidad de los requerimientos, sin embargo, las investigaciones sobre estas temáticas no mostraron grandes variaciones a largo del tiempo. 
+
+Por otro lado, los estudios que abordaron la clasificación de contenidos en los documentos de requerimientos son los que muestran mayor crecimiento entre los años 2016 y 2017. También cabe destacar, que la detección de problemas lingüísticos en documentos y artefactos escritos en lenguaje natural resultó ser uno de los retos más abordados hasta el año 2013.
+
+A fin de proporcionar un mayor entendimiento e identificar tendencias respecto al uso de los métodos de AA, la Fig. \ref{fig:9} presenta la relación entre las actividades de la IR y los algoritmos de AA aplicados en las propuestas identificadas.
+
+En la Fig. \ref{fig:9}, es posible apreciar los diez (10) algoritmos de AA más frecuentemente aplicados, en relación, a las actividades de la IR que presentan mayor cantidad de publicaciones. Consecuentemente, se observa que durante la actividad análisis de requerimientos, a menudo se aplican los algoritmos NB, SVM y KNN. Mientras que, en las actividades de validación y verificación de requerimientos las propuestas identificadas hacen uso de los algoritmos NB, SVM y DT. Por último, durante la especificación de requerimientos los algoritmos SVM y DT son los algoritmos aplicados con mayor frecuencia.  
+Por otro lado, se observa que el  análisis de requerimientos es la actividad de la IR que presenta una variedad superior de algoritmos aplicados, en relación, a las actividades de validación verificación y especificación de requerimientos.  
 
 
+\emph{\textbf{Q2. ¿Cuáles son los algoritmos de aprendizaje supervisado utilizados para resolver dificultades en las actividades de la IR?}}
 
+Una amplia variedad de algoritmos de AA fueron detectados durante el análisis de las propuestas halladas en la literatura, éstos son utilizados para automatizar y optimizar las actividades involucradas en la IR. Fueron identificados cincuenta y cinco (55) algoritmos en los estudios seleccionados. El Anexo A presenta los algoritmos identificados por estudio.
 
-El análisis de los estudios seleccionados demuestra que las técnicas de aprendizaje supervisado en la IR se centran en ocho grandes categorías: (a) Análisis de requerimientos; (b) Identificación de reglas de negocio; (c) Detección de fallas; (d) Estimación del esfuerzo; (e) Resolución de problemas lingüísticos en documentos de requerimientos y artefactos escritos en lenguaje natural (PDNL); (f) Trazabilidad; y (g) Calidad. La Tabla III mapea los artículos identificados y su categoría asociada. 
+Con el propósito de identificar los algoritmos más utilizados, la Fig. \ref{fig:10} muestra los cinco algoritmos de AA con mayor frecuencia de aplicación, en relación, a las cinco categorías que presentan mayor cantidad de propuestas. Las técnicas más utilizadas corresponden a NB, SVM, DT, KNN y Random Forest.
 
-La Fig. 8 muestra la distribución de artículos que emplean el aprendizaje supervisado respecto a las categorías identificadas.
+El algoritmo NB es aplicado en propuestas orientadas a la clasificación de contenido de los documentos de requerimientos (CC), detección y resolución de problemas lingüísticos en documentos y artefactos escritos en lenguaje natural (DPLN), y en tareas relacionadas a la predicción de fallas (PF). 
+Por lo que podemos concluir que dada la simplicidad que ofrece el algoritmo NB para construir modelos con un buen rendimiento, éste es usado en un amplio abanico de tareas y desafíos de la IR. 
 
-Es posible apreciar que a pesar de la liberación en el año 2002 de librerías y nuevas tecnologías que permitieron explorar el uso de las técnicas de AA en diversos dominios, recién a partir del año 2006 comenzaron a ser aplicadas en el área de la IR. Las propuestas iniciales, estuvieron orientadas a la resolución de desafíos relacionados a la calidad y trazabilidad de los requerimientos, sin embargo, las investigaciones sobre estas temáticas no mostraron grandes variaciones a largo del tiempo. 
+Mientras que el algoritmo SVM ha sido utilizado para abordar desafíos relacionados a la clasificación de texto y contenido de los documentos de requerimientos (CC). Posiblemente la selección de dicho algoritmo se deba a su efectividad en la resolución de tareas que involucren la categorización de entidades. También, fueron detectadas investigaciones que analizan la aplicación del algoritmo SVM en propuestas relacionadas a la trazabilidad. 
 
-Por otro lado, los estudios que abordaron la clasificación de contenidos en los documentos de requerimientos son los que muestran mayor crecimiento entre los años 2016 y 2017. También cabe destacar, que la detección de problemas lingüísticos en documentos y artefactos escritos en lenguaje natural (DPLN) resultó ser uno de los retos más abordados hasta el año 2013.
+El algoritmo DT es utilizado para clasificar el contenido de los documentos (CC), predicción de fallas (PF) y en actividades relacionadas a la calidad de los requerimientos. Posiblemente la aplicación de este algoritmo se debe a su capacidad para representar y categorizar ciertas condiciones que ocurren en forma sucesiva a fin de resolver un problema determinado. Este algoritmo facilita la interpretación de los datos, dado que provee una visión gráfica de la toma de decisión necesaria, las variables evaluadas, las acciones que deben ser tomadas y el orden en la cual la toma de decisión será efectuada. 
 
-\emph{Q2. ¿Cuáles son los algoritmos de aprendizaje supervisado utilizados para resolver dificultades en las actividades de la IR?}
+El algoritmo KNN ha sido aplicado en actividades relacionadas a la clasificación de contenido (CC), detección de problemas lingüísticos (DPLN), predicción de fallas (PF), análisis de requerimientos y trazabilidad, lo cual evidencia su amplia flexibilidad y facilidad de aplicación.
 
-Se ha detectado una gran variedad de algoritmos a través de diversas propuestas para abordar las actividades involucradas en la IR. Los estudios seleccionados han empleado cincuenta y cinco (55) algoritmos. El Anexo A presenta los algoritmos identificados por estudio. La Fig. 9 muestra un resumen de los cinco algoritmos de AA más utilizados.
+Por último, el algoritmo Random Forest es utilizado frecuentemente para resolver problemas relacionados a la trazabilidad de requerimientos y en menor medida para clasificación de contenido (CC) y reglas de negocio. 
 
-Las técnicas utilizadas con mayor frecuencia corresponden a SVM, Naive Bayes, Decision Tree (C4.5), KNN y Random Forest. 
+Resulta clave destacar que los estudios analizados no detallan una justificación respecto a los algoritmos aplicados. Y además, aproximadamente el 62\% de los estudios identificados utilizaron más de un algoritmo en sus propuestas de investigación, con la intención de seleccionar aquel que retorna mayor rendimiento. Esto denota la necesidad de un método formal que sirva de guía al proceso de selección de algoritmos de AA para ser aplicados en el área de IR.
 
-Las SVM proporcionan un enfoque alternativo a la categorización de entidades y se han utilizado ampliamente con el propósito de clasificar el texto.
+\begin{figure}[!t]
+\centering
+\includegraphics[width=3.5in]{figures/Figure10_Guada.png}
+\caption{Distribución de fuentes de datos públicas y privadas.}
+\label{fig:11}
+\end{figure}
 
-Mientras que el algoritmo Naive Bayes es aplicado en propuestas orientadas a detectar y resolver problemas lingüísticos en documentos y artefactos escritos en lenguaje natural y además para abordar la clasificación automática de contenido en los documentos de requerimientos. 
+\begin{figure}[!t]
+\centering
+\includegraphics[width=3.5in]{figures/Figure12_Guada.png}
+\caption{Distribución de fuentes de datos públicas y privadas.}
+\label{fig:12}
+\end{figure}
 
-El algoritmo Decision Tree (C.4.5) es utilizado para la predicción de fallas y problemas de clasificación de contenido. Este tipo de algoritmo genera un modelo con estructura en forma de árbol, compuestas por decisiones lógicas. Cada nodo representa decisiones respecto a un atributo dado, mientras que las ramas indican las opciones de decisión. 
+\emph{\textbf{Q3. ¿Cuáles son las principales fuentes de datos utilizadas para ejecutar los algoritmos de aprendizaje supervisado?} } 
 
-El algoritmo KNN se caracteriza por ser flexible y con una mecánica fácil de entender. Este algoritmo busca las observaciones más cercanas a la que se está tratando de predecir y clasifica el punto de interés basado en la mayoría de datos que lo rodean. El valor de K representa la cantidad de puntos vecinos considerados para clasificar el punto de interés. Esta técnica ha sido aplicada a cinco (5) de las categorías identificadas: Detección de Problemas Lingüísticos; Clasificación de Contenido; Predicción de Fallas; Análisis de Requerimientos y Trazabilidad lo cual evidencia su amplia flexibilidad.
+En los estudios seleccionados, se han detectado diversas fuentes de datos, las cuales se clasificaron como públicas o privadas. Las fuentes de datos públicas están disponibles en repositorios y se distribuyen libremente. Mientras que las fuentes de datos privadas no son compartidas por los investigadores y, consecuentemente, resulta compleja la reproducción de sus propuestas. La Fig. \ref{fig:11} muestra la distribución de fuentes de datos públicas y privadas identificadas.
 
-Por otro lado, el algoritmo Random Forest combina un conjunto de árboles de decisión y entrena a cada uno con un conjunto de observaciones tomadas al azar. Las predicciones finales del algoritmo se generan promediando las predicciones individuales de cada árbol. Este algoritmo es utilizado frecuentemente para resolver problemas relacionados a la trazabilidad de requerimientos. 
+A partir de los estudios analizados se identificaron veinticinco (25) fuentes de datos públicas y veintiocho (28) privadas. Entre las fuentes de datos públicas utilizadas con mayor frecuencia se encuentra PROMISE (Predictor Models In Software Engineering) utilizado en seis (6) estudios \cite{Jindal20162027,dekhtyar2017re,abad2017works,Slankas2013,fitzgerald2012early,malhotra2017exploratory}, cuatro (4) estudios utilizaron la fuente de datos iTrust Electronic Health Care System \cite{Slankas2013,Slankas2013a,winkler2016automatic,sharma2014automated} y dos (2) estudios \cite{fitzgerald2012early}, \cite{malhotra2017exploratory} utilizaron el repositorio MDP (Metric Data Program) de la NASA. Cabe señalar que hay algunos estudios que utilizaron más de un conjunto de datos para validar sus propuestas. La Fig. \ref{fig:12} muestra la distribución de las fuentes de datos privadas y públicas a lo largo de los años 2002-2018, considerados en este trabajo.
 
-Resulta clave destacar que los estudios analizados no detallan una justificación respecto a los algoritmos aplicados. Por otro lado, aproximadamente el 62\% de los estudios identificados utilizaron más de un algoritmo en sus propuestas de investigación, con la intención de seleccionar aquel que retorna mayor rendimiento. Esto denota la necesidad de un método formal que sirva de guía al proceso de selección de algoritmos de AA para ser aplicados en el área de IR.
+El empleo de fuentes de datos públicas y privadas en las diversas propuestas de investigación han presentado variaciones a lo largo de los años. Se observa que en período 2016-2017, han aumentado las propuestas que utilizan conjuntos de datos privados, probablemente consecuencia de la competencia global entre organizaciones. Sin embargo, el uso de conjuntos de datos públicos sigue siendo considerablemente elevado. Durante el período 2010-2012, la tendencia del uso de repositorios públicos ha sido notable. El Anexo A mapea las fuentes de datos utilizadas por estudio.
 
-\emph{Q3. ¿Cuáles son las principales fuentes de datos utilizadas para ejecutar los algoritmos de aprendizaje} supervisado?
+Como se mencionó en secciones anteriores, el AA utiliza conjuntos de datos para entrenar un modelo y en base a ello hacer predicciones útiles. Es por esta razón, es necesario destacar que el uso de conjuntos de datos públicos permite que las investigaciones propuestas sean repetibles, refutables y verificables \cite{Catal2009} proporcionando de esta manera, valor a la comunidad científica para encarar futuras investigaciones. En relación a esto, en la década de 1990, se creó un repositorio llamado UCI \footnote{https://archive.ics.uci.edu/ml/index.php} (University of California Irvine) como un servicio a la comunidad que utiliza el AA, el cual actualmente posee 468 conjuntos de datos. 
 
-En los estudios seleccionados, se han detectado diversas fuentes de datos, las cuales se clasificaron como públicas o privadas. Las fuentes de datos públicas están disponibles en repositorios y se distribuyen libremente. Mientras que las fuentes de datos privadas no son compartidas por los investigadores y, consecuentemente, resulta compleja la reproducción de sus propuestas. La Fig. 10 muestra la distribución de fuentes de datos públicas y privadas identificadas.
+Inspirados en el esfuerzo de la UCI, posteriormente, los investigadores involucrados en el área de Ingeniería de Software desarrollaron el repositorio PROMISE \footnote{http://promise.site.uottawa.ca/SERepository}, que cuenta con numerosos conjuntos de datos públicos desde el año 2005. El repositorio PROMISE fue creado para fomentar modelos predictivos repetibles, verificables, refutables y/o mejorables, lo que resulta esencial para la madurez de cualquier disciplina de investigación. 
 
-A partir de los estudios analizados se identificaron veinticinco (25) fuentes de datos públicas y veintiocho (28) privadas. Entre las fuentes de datos públicas utilizadas con mayor frecuencia se encuentra PROMISE (Predictor Models In Software Engineering) utilizado en seis (6) estudios \cite{Jindal20162027,dekhtyar2017re,abad2017works,Slankas2013,fitzgerald2012early,malhotra2017exploratory}, cuatro (4) estudios utilizaron la fuente de datos iTrust Electronic Health Care System \cite{Slankas2013,Slankas2013a,winkler2016automatic,sharma2014automated} y dos (2) estudios \cite{fitzgerald2012early}, \cite{malhotra2017exploratory} utilizaron el repositorio MDP (Metric Data Program) de la NASA. Cabe señalar que hay algunos estudios que utilizaron más de un conjunto de datos para validar sus propuestas. La Fig. 11 muestra la distribución de las fuentes de datos privadas y públicas a lo largo de los años considerados en este trabajo.
+Otra de las fuentes de datos disponibles es MDP de la NASA \footnote{http://mdp.ivv.nasa.gov}, que actualmente consta de 13 conjuntos de datos destinados explícitamente a la investigación de métricas de software. Cada conjunto de datos representa un sistema/subsistema de software de la NASA, contiene las métricas de código y los datos respecto a las fallas de cada módulo que lo compone.
 
-El empleo de fuentes de datos públicas y privadas en las diversas propuestas de investigación han presentado variaciones a lo largo de los años. Se observa que en período 2016-2017 han aumentado las propuestas que utilizan conjuntos de datos privados, probablemente consecuencia de la competencia global entre organizaciones. Sin embargo, el uso de conjuntos de datos públicos sigue siendo considerablemente elevado. Durante el período 2010-2012, la tendencia del uso de repositorios públicos ha sido notable. El Anexo A mapea las fuentes de datos utilizadas por estudio.
-
-El AA utiliza conjuntos de datos para entrenar un modelo y en base a ello hacer predicciones útiles. Es por esta razón que es necesario destacar que el uso de conjuntos de datos públicos hace que las investigaciones propuestas sean repetibles, refutables y verificables \cite{Catal2009}, y proporciona valor a la comunidad científica para encarar futuras investigaciones. En relación a esto, en la década de 1990, se creó un repositorio llamado UCI  (University of California Irvine), el cual actualmente posee 468 conjuntos de datos, como un servicio a la comunidad que utiliza el AA. 
-
-Inspirados en el esfuerzo de la UCI, posteriormente, los investigadores involucrados en el área de Ingeniería de Software desarrollaron el repositorio PROMISE , que cuenta con numerosos conjuntos de datos públicos desde el año 2005. El repositorio PROMISE fue creado para fomentar modelos predictivos repetibles, verificables, refutables y/o mejorables, lo que resulta esencial para la madurez de cualquier disciplina de investigación. 
-
-Otra de las fuentes de datos disponibles es MDP de la NASA , que actualmente consta de 13 conjuntos de datos destinados explícitamente a la investigación de métricas de software. Cada conjunto de datos representa un sistema/subsistema de software de la NASA y contiene las métricas de código y los datos respecto a las fallas de cada módulo que lo compone.
-
-Por otro lado, iTrust  es un proyecto de software de código abierto, su objetivo es el desarrollo de aplicación médica que mantiene el registro de los pacientes y su historial médico, además, permite la comunicación entre médicos. La documentación del proyecto consiste en 59 casos de uso y 11 módulos de código, todos sus artefactos se encuentran disponibles en línea públicamente. 
+Por otro lado, iTrust \footnote{https://bensmith.s3.amazonaws.com/website/papers/sst2011.pdf} es un proyecto de software de código abierto, su objetivo es el desarrollo de una aplicación médica que mantiene el registro de los pacientes y su historial médico, además, permitir la comunicación entre médicos. La documentación del proyecto consiste en 59 casos de uso y 11 módulos de código, todos sus artefactos se encuentran disponibles en línea públicamente. 
 
 \section{ANÁLISIS Y DISCUSIONES DE LOS RESULTADOS}
 
-En esta investigación se analizan los estudios que aplican técnicas de aprendizaje supervisado para resolver dificultades en la IR. Como resultado del proceso de análisis, se observó la existencia de artículos que utilizaron un conjunto de algoritmos para entrenar sus modelos y luego comparar su rendimiento.
-Estos fueron dieciocho (18) estudios. Especialmente se destaca la propuesta de Nikora y Balcom \cite{nikora2009automated} quienes emplean un conjunto de treinta y un (31) algoritmos utilizando la herramienta WEKA.
+En esta investigación se analizan los estudios que aplican técnicas de aprendizaje supervisado para resolver dificultades en la IR. Como resultado del proceso de análisis, se observó la existencia de artículos que utilizan un conjunto de algoritmos para entrenar sus modelos y luego comparar su rendimiento. Los artículos identificados fueron dieciocho (18). Especialmente, se destaca la propuesta de Nikora y Balcom \cite{nikora2009automated} quienes emplean un conjunto de treinta y un (31) algoritmos utilizando la herramienta WEKA.
+Por otro lado, se detectó que los algoritmos SVM y NB en combinación con las técnicas de procesamiento de lenguaje natural son utilizados para resolver problemas relacionados a aspectos lingüísticos en documentos de requerimientos escritos en lenguaje natural y clasificación de contenido. Las ANN fueron utilizadas para eliminar la necesidad de extracción manual de características en los documentos de requerimientos. Para abordar problemas de clasificación fueron utilizados los algoritmos DT, KNN y Regression Logistic (algoritmos clasificadores). Mientras que las técnicas de ensamblado, tales como Bagging y Boosting fueron los algoritmos usados en menor medidas debido a que requieren para su entrenamiento grandes conjuntos de datos. En este sentido, Ott \cite{Ott2013} destaca la necesidad real de continuar trabajando e impulsando el uso de datos públicos en las investigaciones, a fin de disponer de conjuntos de datos de mayor volumen para el entrenamiento de los algoritmos, pilar fundamental del campo del AA. 
+Entre las actividades de la IR más abordadas se identifican el análisis, especificación, validación y verificación de requerimientos. Consecuentemente, es posible determinar que las actividades relacionadas a la obtención y extracción de requerimientos constituyen una laguna de investigación en el área. 
 
-Por otro lado, se detectó que los algoritmos SVM y Naive Bayes en combinación con las técnicas de procesamiento de lenguaje natural son utilizados para resolver problemas relacionados a aspectos lingüísticos en documentos de requerimientos escritos en lenguaje natural y clasificación de contenido. Las ANN fueron utilizadas para eliminar la necesidad de extracción manual de características en los documentos de requerimientos. Para abordar problemas de clasificación fueron utilizados los algoritmos Decision Tree, KNN y Regression Logistic (algoritmos clasificadores).
+Otro aspecto para destacar es la gran variedad de algoritmos aplicados en las propuestas de investigación, lo que denota la necesidad de un procedimiento o consideraciones formales que facilite el proceso de selección de los mismos para su aplicación en el área de requerimientos. Aún más, no se halló evidencia de una hoja de ruta formalmente documentada que especifique las condiciones necesarias para aplicar las técnicas de AA en el campo de la IR. En relación a las pautas necesarias para la preparación de las fuentes de datos para su posterior procesamiento, tampoco se halló evidencia.
+Esta situación, demuestra la necesidad de procesos y/o consideraciones formales en dicha área de investigación. 
 
-Mientras que las técnicas de ensamble (Bagging, Boosting) fueron los algoritmos usados en menor medidas debido a que requieren para su entrenamiento grandes conjuntos de datos. En este sentido Ott \cite{Ott2013}, destaca la necesidad real de continuar trabajando e impulsando el uso de datos públicos en las investigaciones, a fin de disponer de conjuntos de datos de mayor volumen para el entrenamiento de los algoritmos, pilar fundamental del campo del AA. 
+La Fig. \ref{fig:13} ofrece un mapa mental que resume los algoritmos más frecuentemente usados, las tareas de la IR en las que se aplican las técnicas de aprendizaje supervisado y las fuentes de datos públicas más utilizadas en los artículos. Además, las revistas y conferencias más significativas en el área también fueron consideradas. 
 
-Otro aspecto para destacar es la gran variedad de algoritmos aplicados en las propuestas de investigación, lo que denota la necesidad de un procedimiento formal que facilite el proceso de selección de los mismos para su aplicación en el área de requerimientos.  Aún más, no se halló evidencia de una hoja de ruta formalmente documentada que especifique las condiciones necesarias para aplicar las técnicas de AA en el campo de la IR. Esta situación, demuestra la necesidad de procesos formales en dicha área de investigación.
+Durante el desarrollo de esta investigación, no se abordaron ciertas temáticas de interés dada la exhaustividad que requiere su análisis, pero sin dudas valen la pena su estudio y discusión en trabajos posteriores. Este artículo no aborda un análisis comparativo respecto al rendimiento de los algoritmos de AA aplicados en la resolución de un mismo problema o actividad de IR. El flujo o metodología de trabajo utilizado en las propuestas de investigación para aplicar los modelos de AA, no fueron discutidos. Sin embargo, resulta fundamental determinar las metodologías de trabajo utilizadas, a fin de identificar posibles patrones de aplicación.  Por último, en este trabajo no es evaluado el impacto y el nivel de aceptación de las industrias que apuestan a la implementación de propuestas que utilizan técnicas de AA. 
 
-La Fig. 12 ofrece un mapa mental que resume los algoritmos más frecuentemente usados, las tareas de la IR en las que se aplican las técnicas de aprendizaje supervisado y las fuentes de datos públicas más utilizadas en los artículos. Además, las revistas y conferencias más significativas en el área también fueron consideradas.
-
-\section{AMENAZAS A LA VALIDEZ DE LA PROPUESTA}
+\section{AMENAZAS A LA VALIDEZ}
 
 En esta sección se discuten las posibles amenazas a la validez respecto a los resultados obtenidos durante el proceso de revisión de los artículos seleccionados. El mapeo sistemático propuesto ofrece un estudio de las investigaciones en el área de la IR que aplican técnicas de aprendizaje automático supervisado para resolver diversas tareas y desafíos. A pesar de los esfuerzos de los autores para disminuir los sesgos respecto a la selección de los artículos y resultados obtenidos, existen potenciales amenazas que podrían afectar su validez. Las posibles amenazas identificadas en esta investigación están representadas por el sesgo en la selección de estudios incluidos, la extracción de datos de diferentes fuentes y la síntesis de datos. Para mitigar las amenazas potenciales a la validez, se aplicó un protocolo de investigación definido y reconocido por la comunidad científica para realizar estudios de mapeo. Tal como proponen Petersen y otros \cite{petersen2008systematic}, este protocolo propone la definición de preguntas de investigación, criterios de inclusión/exclusión y una estrategia de investigación. Además, se analizaron y debatieron los términos incluidos en la cadena de búsqueda de acuerdo al ámbito de interés de los autores en la temática. Posteriormente, se realizaron pruebas piloto de la cadena de búsqueda para comprobar el alcance definido en esta investigación. Durante el proceso de revisión, todos los autores experimentados en el área participaron y debatieron en  la toma de decisiones acerca de los documentos incluidos en el estudio.
 
 
 \begin{figure}[!t]
 \centering
-\includegraphics[width=3.5in]{figures/figure12_Guada.png}
+\includegraphics[width=3.5in]{figures/figure13_Guada.png}
 \caption{Mapa mental resultante del mapeo sistemático de la literatura.}
-\label{fig12}
+\label{fig:13}
 \end{figure}
 
 Otro de los posibles sesgos presente en la investigación está relacionado con la inclusión de artículos redactados sólo en inglés, dado el bajo nivel de difusión de publicaciones y artículos redactados en otros idiomas, en revistas relevantes de Ingeniería de Software. Cabe destacar, que los autores definieron este criterio considerándolo además, como un límite del alcance de la investigación propuesta. En particular, no se propuso un procedimiento para mitigar este posible sesgo, sino que fue  planteado como una futura línea de investigación.  
@@ -803,17 +865,17 @@ Por otro lado, es necesario considerar que los resultados obtenidos pueden varia
 
 \section{CONCLUSIONES}
 
-El mapeo sistemático de la literatura propuesto tiene como objetivo identificar y analizar tendencias, conjuntos de datos y métodos de aprendizaje supervisado utilizado para resolver tareas y desafíos presentes en la IR entre los años 2002 y 2018.
+El mapeo sistemático de la literatura propuesto tiene como objetivo identificar y analizar tendencias, conjuntos de datos y métodos de aprendizaje supervisado utilizados para resolver tareas y desafíos presentes en la IR entre los años 2002 y 2018. 
+Considerando los criterios de inclusión y exclusión definidos, se analizaron treinta y tres (33) estudios publicados en revistas y conferencias significativas en el área de Ingeniería de Software. El análisis de los estudios seleccionados reveló que las técnicas de aprendizaje supervisado pueden ser aplicadas para resolver y automatizar tareas relacionadas con la IR, enfocándose principalmente en ocho categorías: detección de problemas lingüísticos en documentos de requerimientos y artefactos escritos en lenguaje natural, clasificación de contenido de documentos, trazabilidad, estimación del esfuerzo, análisis de requerimientos, predicción de fallas, calidad y detección de reglas de negocio.
+En esta investigación, se detectaron cincuenta y cinco (55) algoritmos aplicados en las diversas propuestas. Los cinco algoritmos más aplicados son NB, SVM, DT, KNN y Random Forest.
+En relación a las fuentes de datos utilizadas para entrenar los modelos de AA propuestos, se identificaron veinticinco (25) fuentes de datos públicas y veintiocho (28) privadas. Las fuentes de datos públicas utilizadas con mayor frecuencia fueron PROMISE, iTrust Electronic Health Care System y MDP,  aplicados en seis (6), cuatro (4) y dos (2) estudios respectivamente. Es necesario destacar, la presencia de algunos estudios que utilizaron más de un conjunto de datos para validar sus modelos.  
+Los resultados obtenidos en esta investigación permiten evidenciar el valor de los algoritmos de aprendizaje supervisado en el área de la IR. Dado que, tal como los demuestran las propuestas analizadas éstos permiten la optimización y automatización de las actividades involucradas. Aún más, es necesario destacar que no se encontraron trabajos que desestimen la aplicación de las técnicas de AA en la obtención de mejoras y resolución de problemas en dicha área de investigación. Este hecho demanda la necesidad de continuar indagando acerca de sus beneficios y usos posibles.
+Adicionalmente, se identificaron lagunas de investigación también, específicamente en tareas relacionadas a la obtención y extracción de requerimientos, las cuales son fundamentales para el éxito de un proyecto de software. Consecuentemente, este hecho representa una oportunidad de investigación en el área, por lo que  las contribuciones y mejoras que se puedan realizar favorecerán a todo el ciclo de vida del software.  
+Los autores proponen como futura línea de investigación la definición de un proceso formal que sirva de guía para la elección de algoritmos de AA, de acuerdo al tipo de problema o tarea que se desea resolver en la IR, basado en las experiencias y estudios analizados.  
 
-Considerando los criterios de inclusión y exclusión definidos, se analizaron treinta y tres (33) estudios publicados en revistas y conferencias significativas en el área de Ingeniería de Software. El análisis de los estudios seleccionados reveló que las técnicas de aprendizaje supervisado se pueden aplicar para resolver y automatizar tareas relacionadas con la IR, enfocándose principalmente en ocho categorías: detección de problemas lingüísticos en documentos de requerimientos y artefactos escritos en lenguaje natural, clasificación de contenido de documentos, trazabilidad, estimación del esfuerzo, análisis de requerimientos, predicción de fallas, calidad y detección de reglas de negocio. 
-
-Por otro lado, se detectaron cincuenta y cinco (55) algoritmos utilizados en las propuestas de investigación analizadas. Los cinco algoritmos más aplicados son SVM, Naive Bayes, Decision Tree (C4.5), KNN y Random Forest.
-Los resultados obtenidos permiten evidenciar el valor práctico y la utilidad al aplicar algoritmos de aprendizaje supervisado en las actividades involucradas en la IR. Aún más, es necesario destacar que no se encontraron trabajos que desestimen la aplicación de estas técnicas en la obtención de mejoras y resolución de problemas en dicha área de investigación. Este hecho demanda la necesidad de continuar indagando acerca de sus beneficios y usos posibles.
-
-Los autores proponen como futura línea de investigación la definición de un proceso formal que sirva de guía para la elección de algoritmos de AA, de acuerdo al tipo de problema o tarea que se desea resolver en la IR, basado en las experiencias y estudios analizados.
 
 % use section* for acknowledgment
-\section*{Acknowledgment}
+\section*{Agradecimientos}
 
 Los autores agradecen el apoyo brindado por las siguientes instituciones: CONICET y Universidad Tecnológica Nacional (SIUTIFE0004923TC).
 
@@ -846,6 +908,7 @@ Los autores agradecen el apoyo brindado por las siguientes instituciones: CONICE
 % <OR> manually copy in the resultant .bbl file
 % set second argument of \begin to the number of references
 % (used to reserve space for the reference number labels box)
+
 \bibliographystyle{ieeetr}
 \bibliography{referencia1}
 
@@ -957,9 +1020,12 @@ ID & Resumen & Categoría & Algoritmo & Fuente de Datos \\
 % insert where needed to balance the two columns on the last page with
 % biographies
 
+\vfill
+
+\newpage
 
 \begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{./figures/MA.png}}]{Mariel A. Ale}
-Mariel A. Ale Recibió el título de Doctor con mención Ingeniería en Sistemas de Información en la Universidad Tecnológica Nacional, Facultad Regional Santa Fe, en el año 2009. Actualmente, se desempeña como investigador docente en el Centro de Investigación y Desarrollo en Ingeniería en Sistemas de Información, Santa Fe, Argentina. Sus principales áreas de investigación incluyen, Aprendizaje Automático, Interoperabilidad Semántica y Entornos e-learning
+Recibió el título de Doctor con mención Ingeniería en Sistemas de Información en la Universidad Tecnológica Nacional, Facultad Regional Santa Fe, en el año 2009. Actualmente, se desempeña como investigador docente en el Centro de Investigación y Desarrollo en Ingeniería en Sistemas de Información, Santa Fe, Argentina. Sus principales áreas de investigación incluyen, Aprendizaje Automático, Interoperabilidad Semántica y Entornos e-learning
 \end{IEEEbiography}
 
 % You can push biographies down or up by placing
